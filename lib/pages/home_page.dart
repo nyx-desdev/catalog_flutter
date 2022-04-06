@@ -6,12 +6,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double days = 30.9;
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Catalog"),
+      ),
+      body: Center(
         child: Container(
           child: Text('Hello how $days are you?'),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
